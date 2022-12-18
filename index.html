@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>【公式HP】よってちょ　稲沢市のデイサービス</title>
+  <meta name="description" content="愛知県稲沢市のデイサービスよってちょの公式HP。介護のことならお任せください。">
+  <meta name="keywords" content="愛知,稲沢,介護,介護施設,デイサービス">
+  <!-- OGP設定 -->
+  <meta property="og:title" content="稲沢市のデイサービス よってちょ">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="愛知県稲沢市のデイサービス「よってちょ」の公式HP。介護のことならお任せください。">
+  <!-- ↓ここは変更 -->
+  <meta property="og:url" content="https://shibawanko0202.github.io/monte/">
+  <meta property="og:site_name" content="稲沢市のデイサービス よってちょ">
+  <meta property="og:image" content="https://shibawanko0202.github.io/monte/img/ogp.jpg">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Libre Bodoni 料金アピールの金額 -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&text=¥0123456789,&display=swap" rel="stylesheet">
+  <!-- Leckerli One 年間行事予定の月数字 -->
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&text=0123456789&display=swap" rel="stylesheet">
+  <!-- Zen Maru Gothic 年間行事予定の「月」 -->
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&text=月&display=swap" rel="stylesheet">
+  <!-- google maps -->
+  <script>
+  // 地図を初期化して追加します
+  function initMap() {
+    // よってちょの位置
+    const yotte = { lat: 35.243946, lng: 136.791744 };
+    // よってちょを中心とする地図
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: yotte,
+    });
+    // よってちょの位置にあるマーカー
+    const marker = new google.maps.Marker({
+      position: yotte,
+      map: map,
+    });
+  }
+  </script>
+</head>
+<body>
+  <nav class="side-nav">
+    <h1>デイサービス</h1>
+    <img src="img/よってちょ(ロゴタイプ).png" alt="よってちょのロゴタイプ" class="side_logo">
+    <ul>
+      <li class="side-nav__list">
+        <a href="#strength">よってちょについて</a>
+      </li>
+      <li class="side-nav__list">
+        <a href="#outline">施設概要</a>
+      </li>
+      <li class="side-nav__list">
+        <a href="#contact">お問い合わせ</a>
+      </li>
+      <li class="side-nav__list">
+        <a href="#access">アクセス</a>
+      </li>
+      <li class="side-nav__list">
+        <a href="recruit.html">採用情報</a>
+      </li>
+    </ul>
+    <div class="side-nav__footer">
+      <img src="img/三愛ウェルフェア(シンボルマーク)(圧縮済).png" alt="三愛ウェルフェアのシンボルマーク" class="well">
+      <small>&copy;三愛ウェルフェア</small>
+    </div>
+  </nav>
+  <div class="main-area">
+    <div id="to_top">
+      <a href="#">
+        <img src="img/アイコン(TOPへ戻る).png" alt="サイトトップへ移動">
+      </a>
+    </div>
+    <nav class="sp-nav">
+      <ul>
+        <li class="sp-nav__list">
+          <a href="#contact">
+            <img src="img/アイコン(電話発信).png" alt="">
+            <img src="img/アイコン(メール).png" alt="">
+            <p>お問い合わせ</p>
+          </a>
+        </li>
+        <li class="sp-nav__list">
+          <a href="recruit.html">
+            <img src="img/アイコン(採用情報).png" alt="">
+            <p>採用情報</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header id="header">
+      <h1 class="header__h1">個別のニーズに応える<br>デイサービス</h1>
+      <img src="img//よってちょ(ロゴタイプ).png" alt="よってちょのロゴタイプ" class="header__logo-img">
+      <dl class="business-hours">
+        <dt>
+          営業時間
+        </dt>
+        <dd>
+          8:30 - 17:30
+        </dd>
+        <dd>
+          休業日 日曜日
+        </dd>
+      </dl>
+      <dl class="service-hours">
+        <dt>
+          サービス<br>提供時間
+        </dt>
+        <dd>
+          9:15 - 16:30
+        </dd>
+      </dl>
+    </header>
+    <main>
+      <div class="mainimage">
+        <img src="img/よってちょと青空のコピー.jpg" alt="" class="hero">
+        <img src="img/アルファ笑顔.jpg" alt="" class="smile">
+        <img src="img/デルタ＆エコー.jpg" alt="" class="smile">
+        <img src="img/ウッドデッキでランチ.jpg" alt="" class="smile">
+        <img src="img/フォックストロット.jpg" alt="" class="smile">
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li class="header__nav-list">
+            <a href="#contact">お問い合わせはこちら</a>
+          </li>
+          <li class="header__nav-list">
+            <a href="recruit.html">採用情報</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="strength" id="strength">
+        <h2>
+          一人ひとりの<span class="left-bracket-24px">「</span>わがまま<span class="right-bracket-24px">」</span>を大切に
+        </h2>
+        <img src="img/男性に寄り添う介護士.png" alt="" class="illust">
+        <p class="strength__p">
+          <span class="left-bracket-16px">「</span>よってちょ<span class="right-bracket-16px">」</span>は定員10名の小規模デイサービスです。 
+        </p>
+        <p class="strength__p">
+          その人数に対してスタッフ5名体制のため<spna class="punctuation">、</spna>どこよりも手厚く<spna class="punctuation">、</spna>細かな気付きを大切にしております。
+        </p>
+        <div class="container">
+          <p class="strength__but1">
+            基本的な<br>営業時間は
+          </p>
+          <dl class="strength__time-list">
+            <dt>営業時間</dt>
+            <dd>8:30 - 17:30</dd>
+            <dd>休業日 日曜日</dd>
+          </dl>
+          <dl class="strength__time-list">
+            <dt>サービス<br>提供時間</dt>
+            <dd>9:15 - 16:30</dd>
+          </dl>
+          <p class="strength__but2">ですが…</p>
+        </div>
+        <div class="container speechbubbles">
+          <div class="spbubble">
+            <img src="img/ふきだし右すぎ.png" alt="" class="illust-spbubble">
+            <p class="spbubble-comment spb-c1">8時半に迎えに来て欲しい</p>
+          </div>
+          <div class="spbubble">
+            <img src="img/ふきだし.png" alt="" class="illust-spbubble">
+            <p class="spbubble-comment spb-c2">相撲があるから早めに帰りたい</p>
+          </div>
+          <div class="spbubble">
+            <img src="img/ふきだし右.png" alt="" class="illust-spbubble">
+            <p class="spbubble-comment spb-c3">今日は家族の帰りが遅く<br>なるから延長利用したい</p>
+          </div>
+        </div>
+        <p class="strength__p">
+          など<spna class="punctuation">、</spna>ご使用者様一人ひとりのお気持ちを大切にしながら<spna class="punctuation">、</spna>ご家族それぞれの状況にどこよりも柔軟に対応しております。
+        </p>
+        <img src="img/okマーク.png" alt="" class="illust-ok">
+        <ul class="strength__lists">
+          <li>
+            愛用している生活品の持ち込み可
+          </li>
+          <li>
+            疾患のある方の個別食対応可
+          </li>
+          <li>
+            レクリエーションや創作など、一人ひとりの個性やご趣味に応じてご希望に添います
+          </li>
+          <li>
+            決められたスケジュールは無く、その日の気分でおでかけしたり、おやつを作ったり、将棋、カラオケなど自由に過ごせます
+          </li>
+        </ul>
+        <div class="container speechbubbles2">
+          <div class="spbubble2">
+            <img src="img/ふきだし右うえ.png" alt="" class="illust-spbubble">
+            <p class="spbubble-comment spb-c4">みんなでおやつを作りたい</p>
+          </div>
+          <div class="spbubble2">
+            <img src="img/ふきだしショート左2.png" alt="" class="illust-spbubble">
+            <p class="spbubble-comment spb-c5">編み物や手芸がしたい</p>
+          </div>
+          <div class="spbubble2">
+            <img src="img/ふきだし右反転.png" alt="" class="illust-spbubble">
+            <p class="spbubble-comment spb-c6">久しぶりに思いっきり<br>身体を動かしたい</p>
+          </div>
+          <div class="spbubble2">
+            <img src="img/ふきだしショート左.png" alt="" class="illust-spbubble">
+            <p class="spbubble-comment spb-c7">
+              そんな願い<br>かなえます！</p>
+          </div>
+          <img src="img/ガッツポーズする介護士.png" alt="" class="illust-guts">
+          <img src="img/クッキーとビスケット.png" alt="" class="illust-snack">
+          <img src="img/編み物.png" alt="" class="illust-knitting">
+          <img src="img/スニーカー.png" alt="" class="illust-shoes">
+        </div>
+      </section>
+      <section class="free-plan" id="free-plan">
+        <div class="free-plan__box">
+          <dl class="free-plan__main">
+            <dt>
+              お試し<br><span>利用</span>
+            </dt>
+            <dd>
+              <strong>無料</strong>
+            </dd>
+          </dl>
+          <small class="free-plan__chance">
+            <span class="free-plan__chance__two">
+              2回
+            </span>
+            <br>
+            <span class="free-plan__chance__made">
+              まで
+            </span>
+          </small>
+          <small>
+            <span class="marker">
+              ※お食事代もいただきません！
+            </span>
+          </small>
+        </div>
+        <p class="free-plan__p">
+          <span class="left-bracket-16px">「</span>1回の体験利用ではまだ分からない<span class="right-bracket-16px">」</span><br>
+          <span class="left-bracket-16px">「</span>他の曜日の雰囲気も知りたい<span class="right-bracket-16px">」</span>
+        </p>
+        <p>
+          という方のため<span class="punctuation">、</span>初回お試し月内は2回まで無料体験利用していただけます。<br>
+          お気軽にお問い合わせください。
+        </p>
+      </section>
+
+      <section class="target" id="target">
+        <h2 class="target__h2">
+          ご利用の対象となる方
+        </h2>
+        <p class="target__p">
+          介護保険法で要支援1~2・要介護1~5と認定された方<br>または申請中の方
+        </p>
+      </section>
+
+      <section class="plan" id="plan">
+        <h2>
+          料金体系
+        </h2>
+        <div class="plan__lists">
+          <dl class="plan__list">
+            <dt>
+              1日あたりのご負担額
+            </dt>
+            <dd>
+              <dl class="nursing-level price-container">
+                <dt>
+                  <input type="radio" id="nursing-1" name="nursing" value="nursing-1">
+                  <label for="nursing-1">要介護１</label>
+                </dt>
+                <dd>
+                  約
+                  <span class="plan__number-nursing">800</span>
+                  円
+                </dd>
+                <dt>
+                  <input type="radio" id="nursing-2" name="nursing" value="nursing-2">
+                  <label for="nursing-2">要介護２</label>
+                </dt>
+                <dd>
+                  約
+                  <span class="plan__number-nursing">940</span>
+                  円
+                </dd>
+                <dt>
+                  <input type="radio" id="nursing-3" name="nursing" value="nursing-3">
+                  <label for="nursing-3">要介護３</label>
+                </dt>
+                <dd>
+                  約
+                  <span class="plan__number-nursing">1100</span>
+                  円
+                </dd>
+                <dt>
+                  <input type="radio" id="nursing-4" name="nursing" value="nursing-4">
+                  <label for="nursing-4">要介護４</label>
+                </dt>
+                <dd>
+                  約
+                  <span class="plan__number-nursing">1240</span>
+                  円
+                </dd>
+                <dt>
+                  <input type="radio" id="nursing-5" name="nursing" value="nursing-5">
+                  <label for="nursing-5">要介護５</label>
+                </dt>
+                <dd>
+                  約
+                  <span class="plan__number-nursing">1400</span>
+                  円
+                </dd>
+              </dl>
+              <dl class="price-container">
+                <dt>個別機能訓練加算Ⅱ</dt>
+                <dd>
+                  約<span class="plan__number">57</span>円
+                </dd>
+              </dl>
+              <dl class="price-container">
+                <dt>入浴</dt>
+                <dd>
+                  約<span class="plan__number">41</span>円
+                </dd>
+              </dl>
+              <dl class="price-container">
+                <dt>
+                  介護職員処遇改善加算Ⅰ
+                </dt>
+              </dl>
+              <dl class="price-container">
+                <dt>認知症加算(該当の方)</dt>
+                <dd>約<span class="plan__number">61</span>円</dd>
+              </dl>
+            </dd>
+          </dl>
+          <div class="plan__plus">+</div>
+          <dl class="plan__list">
+            <dt>
+              要支援の方のご負担額<br>
+              (1ヶ月あたり)
+            </dt>
+            <dd>
+              <dl class="support-level price-container">
+                <dt>
+                  <input type="radio" id="support-1" name="support" value="support-1">
+                  <label for="support-1">要支援１</label>
+                </dt>
+                <dd>
+                  約
+                  <span class="plan__number-support">1700</span>
+                  円
+                </dd>
+                <dt>
+                  <input type="radio" id="support-2" name="support" value="support-2">
+                  <label for="support-2">要支援２</label>
+                </dt>
+                <dd>
+                  約
+                  <span class="plan__number-support">3500</span>
+                  円
+                </dd>
+              </dl class="price-container">
+              <dl class="price-container">
+                <dt>
+                  介護職員処遇改善加算Ⅰ
+                </dt>
+              <small>
+                ※週2回程度ご利用の場合
+              </small>
+            </dd>
+          </dl>
+          <div class="plan__plus">+</div>
+          <dl class="plan__list">
+            <dt>
+              実費でのご負担額
+            </dt>
+            <dd>
+              <dl>
+                <dt>
+                  昼食・おやつ・お飲み物代
+                </dt>
+                <dd>
+                  <span class="plan__number">790</span>円
+                </dd>
+              </dl>
+            </dd>
+          </dl>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2>お問い合せ</h2>
+        <p>入居にかかわらず<spna class="punctuation">、</spna>介護保険や認定のこと<spna class="punctuation">、</spna>在宅介護のことなどお気軽にお問合せください。</p>
+        <a href="https://form.run/@monte-0587-24-9064" class="contact__button">
+          <img src="img/アイコン(メール).png" alt="">
+          お問い合わせフォームはこちら
+        </a>
+        <a href="tel:0587-22-7774" class="contact__button">
+          <img src="img/アイコン(電話発信).png" alt="">
+          <dl>
+            <dt>電話相談はこちら</dt>
+            <dd>0587-22-7774</dd>
+          </dl>
+          <dl class="contact__reception-time">
+            <dt>受付時間</dt>
+            <dd>9:00-16:00</dd>
+          </dl>
+        </a>
+        <div class="contact__faq-box">
+          <h3>よくあるご質問</h3>
+          <dl class="contact__faq">
+            <dt class="contact__faq-q">体験入居はできますか？</dt>
+            <dd class="contact__faq-a">
+              可能な居室が空いていれば承ります。<br>
+              料金・期間等についてはお問い合わせください。
+            </dd>
+            <dt class="contact__faq-q">入居の条件はありますか？</dt>
+            <dd class="contact__faq-a">
+              介護認定があれば自立の方から全介助の必要な方までご入居いただけます。<br>
+              詳しくは実際にお会いして、ご説明させていただきます。<br>
+              介護が必要な方の場合、60歳前であってもご入居いただける場合があります。<br>
+              詳しくはお気軽にご相談ください。
+            </dd>
+            <dt class="contact__faq-q">持病等がありますが入居できますか？</dt>
+            <dd class="contact__faq-a">
+              基本的にはご家族に通院のご同行をお願いしております。<br>
+              ご家族の方がご同行いただけない場合は別途ご相談させていただきます。
+            </dd>
+          </dl>
+        </div>
+      </section>
+      <section class="access" id="access">
+        <h2>アクセス</h2>
+        <!--google mapの表示 -->
+        <div id="map"></div>
+        <address>〒492-8215 愛知県稲沢市大塚北 2-97</address>
+        <dt>公共交通機関でお越しの方</dt>
+        <!-- <dd>名鉄<span class="left-bracket-16px">「</span>国府宮<span class="right-bracket-16px">」</span>駅より稲沢コミュニティバス<span class="left-bracket-16px">「</span>城見ヶ丘<span class="right-bracket-16px">」</span>徒歩5分</dd> -->
+        <dd>ここは無し？</dd>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <small>&copy; 株式会社 三愛ウェルフェア</small>
+        <img src="img/三愛ウェルフェア(シンボルマーク)(圧縮済).png" alt="三愛ウェルフェアのシンボルマーク">
+      </div>
+      <address>〒492-8219 愛知県稲沢市大塚北 2-97</address>
+      <address>TEL/FAX 0587-22-7774</address>
+      <ul>
+        <li>住宅型有料老人ホーム もんてくらい</li>
+        <li>ヘルパーステーション いてよんよ</li>
+      </ul>
+    </footer>
+    <div class="sp-footer"></div>
+  </div>
+  <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT6eW-IAzLbqoL33F5Eg79jsTG-2X9X2M&callback=initMap">
+ </script>
+ <script src="js/main.js"></script>
+</body>
+</html>
