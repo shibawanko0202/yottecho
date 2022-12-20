@@ -39,12 +39,11 @@
     overflow-x: hidden;
   }
   section{
-    margin: 0 auto;
-    max-width: 520px;
+    margin: 0 10px;
     text-align: center;
   }
   section + section{
-    margin: 80px auto;
+    margin: 80px 10px;
   }
   h2{
     font-size: 24px;
@@ -62,12 +61,12 @@
     font-weight: normal;
     margin-bottom: 4px;
   }
-  /* dd + dt{
+  dd + dt{
     margin-top: 12px;
   }
   dd + dd{
     margin-top: 4px;
-  } */
+  }
   li + li{
     margin-top: 8px;
   }
@@ -310,12 +309,74 @@
 /* header */
 
   header{
-    position: absolute;
+    position: relative;
     top: 0;
     width: 100%;
-    padding: 0 10px;
-    display: flex;
   }
+  .header__bgi{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+  .appearance-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 45%;
+  }
+  .smile{
+    position: absolute;
+    z-index: 1;
+    height: 30%;
+    border: 3px #fff solid;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.621);
+    border-radius: 2px;
+    opacity: 0;
+    filter: saturate(90%);
+    animation-name: smile-fadein-out;
+    animation-duration: 15s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .smile:nth-child(2){
+    left: 3%;
+    top: 5%;
+    transform: rotate(-14deg);
+    height: 30%;
+    animation-delay: 1s;
+  }
+  .smile:nth-child(3){
+    left: 3%;
+    bottom: 8%;
+    transform: rotate(10deg);
+    animation-delay: -3s;
+  }
+  .smile:nth-child(4){
+    right: 5%;
+    top: 6%;
+    transform: rotate(10deg);
+    height: 33%;
+    animation-delay: 9s;
+  }
+  .smile:nth-child(5){
+    right: 3%;
+    bottom: 7%;
+    transform: rotate(-6deg);
+    animation-delay: 5s;
+  }
+
+  @keyframes smile-fadein-out {
+    0% {opacity: 0;}
+    30% {opacity: 0;}
+    40% {opacity: 1;}
+    60% {opacity: 1;}
+    70% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+
   .header__h1{
     position: absolute;
     z-index: 2;
@@ -329,7 +390,7 @@
     font-family: 'huiji-subset', cursive;
     text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
               -1px 1px 0 #FFF, 1px -1px 0 #FFF,
-              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              0px 1px 0 #FFF,  0 -1px 0 #FFF,
               -1px 0 0 #FFF, 1px 0 0 #FFF;
   }
   .header__logo-img{
@@ -377,184 +438,7 @@
 
   @media(min-width:520px){
     
-    header{
-      padding: 0 10px;
-    }
-    .header__h1{
-      font-size: 20px;
-      width: 240px;
-      top: 35px;
-      right: calc(50% - 120px);
-      margin: 8px;
-      text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
-                -1px 1px 0 #FFF, 1px -1px 0 #FFF,
-                0px 1px 0 #FFF,  0 -1px 0 #FFF,
-                -1px 0 0 #FFF, 1px 0 0 #FFF;
-    }
-    .header__logo-img{
-      width: 200px;
-      top: 90px;
-      right: calc(50% - 100px);
-      margin: 8px;
-    }
-    .business-hours{
-      top: 190px;
-      left: calc(50% - 130px);
-      width: 110px;
-      height: 70px;
-      font-size: 16px;
-      border: 1px solid #FFF;
-      border-radius: 5px;
-      margin: 8px;
-    }
-    .service-hours{
-      top: 190px;
-      left: calc(50% - 10px);
-      width: 110px;
-      height: 70px;
-      font-size: 16px;
-      border: 1px solid #FFF;
-      border-radius: 5px;
-      margin: 8px;
-    }
-    .header__nav{
-      display: block;
-    }
-  }
-
-
-/* header */
-
-@media(min-width:520px){
-
-  /* header */
-
-    .header__nav{
-      display: block;
-      width: 100%;
-      /* height: 40px; */
-      /* background-color: #cae7e7; */
-      margin: 0;
-      padding: 4px;
-    }
-    .header__nav ul{
-      display: flex;
-      flex-wrap: wrap; 
-      justify-content: center;
-      gap: 8px;
-    }
-    .header__nav-list{
-      display:flexbox;
-      /* flex-direction: column; */
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      cursor: pointer;
-      border: 1.5px solid var(--yottecho-textcolor);
-      border-radius: 5px;
-      color: var(--yottecho-textcolor);
-      background-color: #fff;
-      transition: all .5s;
-      margin: 0;
-      padding: 8px;
-    }
-    .header__nav-list:hover{
-    }
-    
-
-  /* header */
-
-}
-
-
-/* main */
-
-/* TOP画 */
-
-  .mainimage{
-    position: relative;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-    /* margin-bottom: 20px; */
-  }
-  .smile{
-    position: absolute;
-    z-index: 1;
-    height: 30%;
-    border: 3px #fff solid;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.621);
-    border-radius: 2px;
-    opacity: 0;
-    filter: saturate(90%);
-  }
-  .smile:nth-child(2){
-    left: 2%;
-    top: 4%;
-    transform: rotate(-14deg);
-    height: 27%;
-    animation-name: smile-fadein-out;
-    animation-duration: 15s;
-    animation-timing-function: ease;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  .smile:nth-child(3){
-    left: 3%;
-    bottom: 5%;
-    transform: rotate(10deg);
-    animation-name: smile-fadein-out;
-    animation-duration: 15s;
-    animation-timing-function: ease;
-    animation-delay: -3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  .smile:nth-child(4){
-    right: 5%;
-    top: 6%;
-    transform: rotate(10deg);
-    height: 33%;
-    animation-name: smile-fadein-out;
-    animation-duration: 15s;
-    animation-timing-function: ease;
-    animation-delay: 9s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  .smile:nth-child(5){
-    right: 1%;
-    bottom: 4%;
-    transform: rotate(-6deg);
-    animation-name: smile-fadein-out;
-    animation-duration: 15s;
-    animation-timing-function: ease;
-    animation-delay: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  @keyframes smile-fadein-out {
-    0% {opacity: 0;}
-    30% {opacity: 0;}
-    40% {opacity: 1;}
-    60% {opacity: 1;}
-    70% {opacity: 0;}
-    100% {opacity: 0;}
-  }
-  .hero{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* ↓使用画像により調整 */
-    object-position: 50% 45%;
-  }
-
-
-  @media(min-width:520px){
-
-    .mainimage{
+    .header__bgi{
       height: 350px;
     }
     .smile{
@@ -580,9 +464,70 @@
       bottom: 4%;
     }
 
+    .header__h1{
+      font-size: 20px;
+      width: 240px;
+      top: 35px;
+      right: calc(50% - 120px);
+    }
+    .header__logo-img{
+      width: 200px;
+      top: 90px;
+      right: calc(50% - 100px);
+    }
+    .business-hours{
+      top: 190px;
+      left: calc(50% - 130px);
+      width: 110px;
+      height: 70px;
+      font-size: 16px;
+    }
+    .service-hours{
+      top: 190px;
+      left: calc(50% - 10px);
+      width: 110px;
+      height: 70px;
+      font-size: 16px;
+    }
+    .header__nav{
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 4px;
+    }
+    .header__nav ul{
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      gap: 8px;
+    }
+    .header__nav-list{
+      display:flexbox;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      cursor: pointer;
+      border: 1.5px solid var(--yottecho-textcolor);
+      border-radius: 5px;
+      color: var(--yottecho-textcolor);
+      background-color: #fff;
+      transition: all .5s;
+      margin: 0;
+      padding: 8px;
+    }
+    .header__nav-list:hover{
+      color: #fff;
+      background-color: var(--yottecho-textcolor);
+    }
   }
 
-/* TOP画 */
+
+
+
+/* header */
+
+
+/* main */
 
 /* よってちょについて(.strength) */
 
@@ -598,7 +543,6 @@
   .strength__time{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
   }
   .strength__time div{
@@ -663,6 +607,8 @@
     position: absolute;
     color: #105183;
     font-size: 13px;
+    padding: 0;
+    width: 100%;
   }
   .spb-c1{
     top: 22px;
@@ -681,11 +627,12 @@
   }
   .strength__lists{
     text-align: left;
+    max-width: 520px;
     border: 1.5px solid var(--yottecho-textcolor);
     border-radius: 5px;
     list-style: circle;
     padding: 30px;
-    margin: 8px;
+    margin: 8px auto;
     background-color: rgba(255, 255, 255, 0.479);
   }
   .speechbubbles2{
@@ -735,7 +682,7 @@
   .spb-c7{
     text-align: center;
     top: 4px;
-    left: 13px;
+    left: 8px;
   }
   .illust-guts{
     position: absolute;
@@ -833,7 +780,7 @@
     .spb-c7{
       text-align: center;
       top: 10px;
-      left: 16px;
+      left: 8px;
     }
     .illust-guts{
       position: absolute;
@@ -879,6 +826,7 @@
 
 /* よってちょについて(.strength) */
 
+
 /* ご利用の対象となる方(.target) */
 
   .target__h2{
@@ -895,7 +843,14 @@
 
 /* ご利用の対象となる方(.target) */
 
+
 /* お試し無料(.freeplan) */
+
+  .free-plan__anchor{
+    display: block;
+    padding-top: 70px;
+    margin-top: -70px;
+  }
 
   .free-plan__box{
     position: relative;
@@ -932,7 +887,7 @@
     height: 80px;
     font-size: 18px;
     line-height: 20px;
-    top: -4px;
+    top: -48px;
     right: -20px;
     transform: rotate(20deg);
     padding-top: 20px;
@@ -971,6 +926,7 @@
 
 
 /* お試し無料(.freeplan) */
+
 
 /* 料金体系(.paln) */
 
@@ -1257,7 +1213,7 @@
 
   /* header */
 
-    .header__recruit-h1{
+    /* .header__recruit-h1{
       position: absolute;
       top: 38px;
       left: 15px;
@@ -1265,26 +1221,18 @@
       color: #fff;
       text-align: center;
       font-family: 'huiji-subset', cursive;
-    }
+    } */
 
   /* header */
 
-  /* TOP画 */
-
-    .recruit-hero{
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      /* ↓使用画像により調整 */
-      object-position: 0% 25%;
-    }
-
-  /* TOP画 */
 
   /* 正社員･パート勤務(.employee) */
 
+  .illust-employee{
+    width: 120px;
+  }
     .employee{
-      margin: 0 8px 80px;
+      margin: 0 auto;
     }
     .employee__list{
       border-left: solid 8px var(--yottecho-subcolor);
@@ -1326,11 +1274,11 @@
 
   /* TOP画 */
   
-    /* .hero,
+    /* .appearance-image,
     .recruit-hero{
       height: 350px;
     }
-    .hero{
+    .appearance-image{
       object-position: 0% 65%;
     } */
 
