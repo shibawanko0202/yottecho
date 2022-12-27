@@ -2,14 +2,13 @@
 /* common */
 
   :root{
-    --yottecho-maincolor: rgb(244, 254, 246);
-    --yottecho-subcolor: #f8d8d2;
-    --yottecho-pointcolor: #e1a398;
-    --yottecho-revaersecolor: rgb(107, 171, 65);
-    --yottecho-footercolor: rgb(148, 196, 158);
-    --yottecho-sidecolor: rgb(145, 178, 137);
+    --yottecho-maincolor: rgb(236, 251, 251);
+    --yottecho-subcolor: #f9d7bd;
+    --yottecho-pointcolor: #f2b45d;
+    --yottecho-revaersecolor: rgb(65, 134, 171);
+    --yottecho-footercolor: rgb(148, 182, 196);
+    --yottecho-sidecolor: rgb(135, 170, 185);
     --yottecho-textcolor: rgb(72, 48, 48);
-    --yottecho-white: rgb(251, 255, 251);
     --side_width: 280px;
   }
 
@@ -164,6 +163,7 @@
     #to_top{
       bottom: 15px;
     }
+
   }
 
 /* TOPへ戻るボタン */
@@ -281,7 +281,6 @@
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
-    /* transition: all .5s; */
   }
   .sp-nav__p{
     font-weight:500;
@@ -293,7 +292,6 @@
     margin: 2px 4px;
     object-fit: contain
   }
-
 
   @media(min-width:520px){
 
@@ -403,34 +401,34 @@
     margin: 8px;
     filter: drop-shadow(0 0 4px rgba(0,0,0,.5));
   }
-  .business-hours{
+
+  .header__hours{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     top: 150px;
-    left: calc(50% - 100px);
-    width: 80px;
-    height: 50px;
-    font-size: 12px;
+    width: 85px;
+    height: 60px;
+    font-size: 13px;
     z-index: 2;
     color: #FFF;
     border: 1px solid #FFF;
     border-radius: 5px;
     text-align: center;
     margin: 8px;
+  }
+  .header__hours dd{
+    margin: 0;
+  }
+  .business-hours{
+    left: calc(50% - 100px);
   }
   .service-hours{
-    position: absolute;
-    top: 150px;
     left: calc(50% - 10px);
-    width: 80px;
-    height: 50px;
-    font-size: 12px;
-    z-index: 2;
-    color: #FFF;
-    border: 1px solid #FFF;
-    border-radius: 5px;
-    text-align: center;
-    margin: 8px;
   }
+
   .header__nav{
     display: none;
     z-index: 2;
@@ -467,27 +465,25 @@
     .header__h1{
       font-size: 20px;
       width: 240px;
-      top: 35px;
+      top: 55px;
       right: calc(50% - 120px);
     }
     .header__logo-img{
       width: 200px;
-      top: 90px;
+      top: 110px;
       right: calc(50% - 100px);
     }
-    .business-hours{
-      top: 190px;
-      left: calc(50% - 130px);
+    .header__hours{
+      top: 215px;
       width: 110px;
       height: 70px;
       font-size: 16px;
     }
+    .business-hours{
+      left: calc(50% - 130px);
+    }
     .service-hours{
-      top: 190px;
       left: calc(50% - 10px);
-      width: 110px;
-      height: 70px;
-      font-size: 16px;
     }
     .header__nav{
       display: block;
@@ -520,8 +516,6 @@
       background-color: var(--yottecho-textcolor);
     }
   }
-
-
 
 
 /* header */
@@ -557,12 +551,17 @@
   .strength__but1{
     text-align: center;
     font-size: 20px;
+    width: 120px;
   }
   .strength__but2{
     text-align: center;
     font-size: 20px;
+    width: 100px;
   }
   .strength__time-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 110px;
     height: 70px;
     color: var(--yottecho-textcolor);
@@ -571,13 +570,16 @@
     text-align: center;
     margin: 8px;
   }
+  .strength__time-list dd{
+    margin: 0;
+  }
   .speechbubbles{
     position: relative;
     display: flex;
     flex-direction: column;
     height: 250px;
     width: 90%;
-    max-width: 700px;
+    max-width: 400px;
     margin: 0 auto;
   }
   .spbubble{
@@ -608,18 +610,19 @@
     color: #105183;
     font-size: 13px;
     padding: 0;
+    margin: 0;
     width: 100%;
   }
   .spb-c1{
-    top: 22px;
+    top: 30px;
     left: 17px;
   }
   .spb-c2{
-    top: 26px;
+    top: 34px;
     left: 22px;
   }
   .spb-c3{
-    top: 12px;
+    top: 20px;
     left: 24px;
   }
   .illust-ok{
@@ -641,7 +644,7 @@
     flex-direction: column;
     height: 350px;
     width: 90%;
-    max-width: 700px;
+    max-width: 500px;
     margin: 0 auto;
   }
   .spbubble2{
@@ -668,21 +671,21 @@
     top: 250px;
   }
   .spb-c4{
-    top: 23px;
+    top: 31px;
     left: 14px;
   }
   .spb-c5{
-    top: 25px;
+    top: 33px;
     left: 21px;
   }
   .spb-c6{
-    top: 12px;
+    top: 20px;
     left: 23px;
   }
   .spb-c7{
     text-align: center;
-    top: 4px;
-    left: 8px;
+    top: 12px;
+    left: 7px;
   }
   .illust-guts{
     position: absolute;
@@ -712,16 +715,16 @@
   @media(min-width:400px){
 
     .spbubble{
-      width: 250px;
+      width: 230px;
     }
     .spbubble:nth-child(1){
       right: 0;
       top: 0;
     }
     .spbubble:nth-child(2){
-      width: 270px;
+      width: 255px;
       left: 0;
-      top: 65px;
+      top: 64px;
     }
     .spbubble:nth-child(3){
       right: 5%;
@@ -733,31 +736,31 @@
     }
 
     .spb-c1{
-      top: 33px;
-      left: 23px;
+      top: 36px;
+      left: 18px;
     }
     .spb-c2{
-      top: 34px;
-      left: 23px;
+      top: 39px;
+      left: 15px;
     }
     .spb-c3{
-      top: 18px;
-      left: 38px;
+      top: 23px;
+      left: 30px;
     }
 
     .spbubble2:nth-child(1){
-      width: 250px;
+      width: 230px;
       right: 3%;
       top: 0;
     }
     .spbubble2:nth-child(2){
-      width: 220px;
+      width: 210px;
       left: 10%;
       top: 65px;
     }
     .spbubble2:nth-child(3){
-      width: 220px;
-      right: 10%;
+      width: 210px;
+      right: 0%;
       top: 143px;
     }
     .spbubble2:nth-child(4){
@@ -766,20 +769,20 @@
       width: 150px;
     }
     .spb-c4{
-      top: 33px;
-      left: 23px;
+      top: 37px;
+      left: 17px;
     }
     .spb-c5{
-      top: 34px;
-      left: 29px;
+      top: 40px;
+      left: 24px;
     }
     .spb-c6{
-      top: 17px;
-      left: 36px;
+      top: 24px;
+      left: 27px;
     }
     .spb-c7{
       text-align: center;
-      top: 10px;
+      top: 18px;
       left: 8px;
     }
     .illust-guts{
@@ -804,8 +807,9 @@
       position: absolute;
       width: 120px;
       top: 190px;
-      right: 50px;
+      right: 10px;
     }
+
   }
 
   @media(min-width:520px){
@@ -822,6 +826,7 @@
       margin: 40px 0 0 0;
       font-size: 24px;
     }
+
   }
 
 /* よってちょについて(.strength) */
@@ -830,7 +835,6 @@
 /* ご利用の対象となる方(.target) */
 
   .target__h2{
-    /* height: 60px; */
     width: 250px;
     text-align: center;
     margin: 0 auto;
@@ -909,8 +913,9 @@
     font-size: 16px;
   }
   .free-plan__p{
-    max-width: 280px;
-    margin-top: 12px;
+    max-width: 320px;
+    /* margin-top: 12px; */
+    /* text-align: center; */
   }
 
   @media(min-width:380px){
@@ -942,6 +947,7 @@
     padding: 20px 0;
     background-color: rgba(255, 236, 172, 0.756);
     border-radius: 20px;
+    /* box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.541); */
   }
   .plan__list > dt{
     font-size: 22px;
@@ -1000,6 +1006,7 @@
     padding: 0;
     color: #fff;
     z-index: 1;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.221);
   }
   input[type="radio"] + label {
     font-size: 1.125em;
@@ -1211,20 +1218,6 @@
 
 /* 採用情報ページ */
 
-  /* header */
-
-    /* .header__recruit-h1{
-      position: absolute;
-      top: 38px;
-      left: 15px;
-      font-size: 20px;
-      color: #fff;
-      text-align: center;
-      font-family: 'huiji-subset', cursive;
-    } */
-
-  /* header */
-
 
   /* 正社員･パート勤務(.employee) */
 
@@ -1233,6 +1226,9 @@
   }
     .employee{
       margin: 0 auto;
+    }
+    .employee dt{
+      font-weight: bold;
     }
     .employee__list{
       border-left: solid 8px var(--yottecho-subcolor);
@@ -1262,26 +1258,3 @@
 
 /* 採用情報ページ */
 
-
-
-/* pc/tablet */
-
-
-
-
-@media(min-width: 1100px){
-
-
-  /* TOP画 */
-  
-    /* .appearance-image,
-    .recruit-hero{
-      height: 350px;
-    }
-    .appearance-image{
-      object-position: 0% 65%;
-    } */
-
-  /* TOP画 */
-
-}
