@@ -579,7 +579,7 @@
     flex-direction: column;
     height: 250px;
     width: 90%;
-    max-width: 400px;
+    max-width: 330px;
     margin: 0 auto;
   }
   .spbubble{
@@ -644,7 +644,7 @@
     flex-direction: column;
     height: 350px;
     width: 90%;
-    max-width: 500px;
+    max-width: 330px;
     margin: 0 auto;
   }
   .spbubble2{
@@ -702,8 +702,8 @@
   .illust-knitting{
     position: absolute;
     width: 70px;
-    top: 70px;
-    left: 150px;
+    top: 113px;
+    left: 20px;
   }
   .illust-shoes{
     position: absolute;
@@ -714,6 +714,9 @@
 
   @media(min-width:450px){
 
+    .speechbubbles{
+      max-width: 400px;
+    }
     .spbubble{
       width: 230px;
     }
@@ -748,6 +751,9 @@
       left: 30px;
     }
 
+    .speechbubbles2{
+      max-width: 500px;
+    }
     .spbubble2:nth-child(1){
       width: 230px;
       right: 3%;
@@ -761,7 +767,7 @@
     .spbubble2:nth-child(3){
       width: 210px;
       right: 0%;
-      top: 143px;
+      top: 133px;
     }
     .spbubble2:nth-child(4){
       left: 140px;
@@ -794,7 +800,7 @@
     .illust-snack{
       position: absolute;
       width: 90px;
-      top: 28px;
+      top: 20px;
       right: 230px;
     }
     .illust-knitting{
@@ -806,7 +812,7 @@
     .illust-shoes{
       position: absolute;
       width: 120px;
-      top: 197px;
+      top: 187px;
       right: 10px;
     }
 
