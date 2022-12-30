@@ -954,43 +954,37 @@
     font-size: 22px;
     margin: 16px;
   }
+  .plan__list > dd{
+    width: 100%;
+  }
   .price-container + .price-container::before{
     content: "+";
     font-size: 24px;
-    /* margin: 300px; */
+    /* margin: 30px; */
   }
-  .price-container dt{
-    margin-top: 10px;
+  .price-container{
+    width: 100%;
   }
+
+  .price-container dt,
   .price-container dd{
-    margin-bottom: 10px;
+    margin: 10px;
   }
   .plan-level{
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    max-width: 270px;
     margin: 0 auto;
   }
   .plan-level dt,
   .plan-level dd{
-    width: 50%;
-    margin: 8px 0 8px 0;
+    width: calc(50%);
+    margin: 8px 0;
   }
   .plan-level dd{
     text-align: right;
-    padding-right: 10px;
+    padding-right: 20px;
   }
-  /* .support-level{
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    margin: 0 auto;
-  }
-  .support-level dt,
-  .support-level dd{
-    width: 50%;
-    margin: 8px 0 8px 0;
-  } */
   .plan__number{
     font-size: 24px;
     line-height: 18px;
@@ -1227,10 +1221,11 @@
   /* 正社員･パート勤務(.employee) */
 
   .illust-employee{
-    width: 120px;
+    width: 100px;
   }
     .employee{
       margin: 0 auto;
+      padding: 8px;
     }
     .employee dt{
       font-weight: bold;
