@@ -15,30 +15,30 @@ function top_button(){
 // スクロールするたびに判定
 window.addEventListener("scroll",top_button);
 
-// input対応
 
-const number_n = document.getElementsByClassName("plan__number-nursing");
-const nursing = document.getElementsByName("nursing");
-const number_s = document.getElementsByClassName("plan__number-support");
-const support = document.getElementsByName("support");
 
-// ↓要介護レベル↓
-for(let i = 0;i < nursing.length;i++){
-  nursing[i].addEventListener("change",()=>{
-    for(let i = 0;i < nursing.length;i++){
-      number_n[i].classList.remove("plan__number");
+// 介護度のラジオボタンについて
+
+const number = document.getElementsByClassName("plan__number-level");
+const level = document.getElementsByName("n-level");
+const list = document.getElementsByClassName("plan__list");
+
+
+for(let i = 0;i < level.length;i++){
+  level[i].addEventListener("change",()=>{
+    for(let i = 0;i < level.length;i++){
+      number[i].classList.remove("plan__number");
     };
-    number_n[i].classList.toggle("plan__number");
+    number[i].classList.add("plan__number");
+
+    if(i < 5){
+      list[0].classList.add("plan__list-choice");
+      list[1].classList.remove("plan__list-choice");
+    } else {
+      list[1].classList.add("plan__list-choice");
+      list[0].classList.remove("plan__list-choice");
+    };
   });
 };
 
-// ↓要支援レベル↓
-for(let i = 0;i < support.length;i++){
-  support[i].addEventListener("change",()=>{
-    for(let i = 0;i < support.length;i++){
-      number_s[i].classList.remove("plan__number");
-    };
-    number_s[i].classList.toggle("plan__number");
-  });
-};
 

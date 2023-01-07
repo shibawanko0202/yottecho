@@ -914,6 +914,7 @@
     letter-spacing: -4px;
     padding-top: 10px;
     padding-right: 9px;
+    padding-left: -12px;
   }
   .free-plan__chance__made{
     padding-right: 6px;
@@ -954,7 +955,16 @@
     padding: 20px 0;
     background-color: rgba(255, 236, 172, 0.756);
     border-radius: 20px;
-    /* box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.541); */
+    opacity: 1;
+    transition: all .6s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.221);
+  }
+  .plan__list:not(.plan__list-choice){
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.541);
+    opacity: .5;
+  }
+  .plan__list-choice{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.221);
   }
   .plan__list > dt{
     font-size: 22px;
@@ -1024,8 +1034,9 @@
     width: 20px;
     height: 20px;
     font-size: 12px;
+    line-height: 12px;
     color: transparent;
-    padding: 3px;
+    padding: 3.3px 3px 3px 2.7px;
     background-color: #d7d7d7;
     border-radius: 50%;
     margin-right: 10px;
