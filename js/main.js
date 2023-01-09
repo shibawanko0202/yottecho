@@ -22,6 +22,7 @@ window.addEventListener("scroll",top_button);
 const number = document.getElementsByClassName("plan__number-level");
 const level = document.getElementsByName("n-level");
 const list = document.getElementsByClassName("plan__list");
+const plus = document.getElementById("plus");
 
 
 for(let i = 0;i < level.length;i++){
@@ -34,9 +35,11 @@ for(let i = 0;i < level.length;i++){
     if(i < 5){
       list[0].classList.add("plan__list-choice");
       list[1].classList.remove("plan__list-choice");
+      plus.classList.add("plan__plus-move");
     } else {
       list[1].classList.add("plan__list-choice");
       list[0].classList.remove("plan__list-choice");
+      plus.classList.remove("plan__plus-move");
     };
   });
 };

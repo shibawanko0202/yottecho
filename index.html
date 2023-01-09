@@ -282,11 +282,14 @@
       </section>
 
       <section class="plan" id="plan">
-        <h2>
+        <h2 class="plan__h2">
           料金体系
         </h2>
+        <small class="plan__small">
+          介護度･支援度を選択してください
+        </small>
         <div class="plan__lists">
-          <dl class="plan__list">
+          <dl class="plan__list plan__list-choice">
             <dt>
               要介護の方のご負担額<br>(１日あたり)
             </dt>
@@ -361,7 +364,7 @@
               </dl>
             </dd>
           </dl>
-          <div class="plan__plus">+</div>
+          <!-- <div class="plan__plus">+</div> -->
           <dl class="plan__list">
             <dt>
               要支援の方のご負担額<br>
@@ -397,10 +400,11 @@
               </small>
             </dd>
           </dl>
-          <div class="plan__plus">+</div>
+          <div class="plan__plus plan__plus-move" id="plus">+</div>
           <dl class="plan__list plan__list-choice">
             <dt>
-              実費でのご負担額
+              実費でのご負担額<br>
+              (１日あたり)
             </dt>
             <dd>
               <dl>

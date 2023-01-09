@@ -943,6 +943,13 @@
 
 /* 料金体系(.paln) */
 
+  .plan__h2{
+    margin-bottom: 4px;
+  }
+  .plan__small{
+    display: block;
+    margin: 4px auto 16px;
+  }
   .plan__lists{
     display: flex;
     flex-direction: column;
@@ -953,18 +960,22 @@
     width: 95%;
     max-width: 500px;
     padding: 20px 0;
+    margin: 8px;
     background-color: rgba(255, 236, 172, 0.756);
     border-radius: 20px;
-    opacity: 1;
-    transition: all .6s;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.221);
-  }
-  .plan__list:not(.plan__list-choice){
-    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.541);
     opacity: .5;
+    box-shadow:
+    3px 3px 12px transparent,
+    -3px -3px 12px transparent
+    ;
+    transition: all .6s;
   }
   .plan__list-choice{
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.221);
+    opacity: 1;
+    box-shadow:
+     3px 3px 12px rgba(17, 17, 17, 0.3),
+     -3px -3px 12px rgba(17, 17, 17, 0.3)
+    ;
   }
   .plan__list > dt{
     font-size: 22px;
@@ -981,10 +992,19 @@
   .price-container{
     width: 100%;
   }
-
   .price-container dt,
   .price-container dd{
     margin: 10px;
+  }
+  /* ↓↓ボタンを分かり易いように */
+  .plan__select{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow:
+    3px 3px 12px rgba(17, 17, 17, 0.3),
+    -3px -3px 12px rgba(17, 17, 17, 0.3)
+   ;
   }
   .plan-level{
     display: flex;
@@ -1017,11 +1037,17 @@
     font-size: 50px;
     line-height: 43px;
     font-weight: bold;
-    margin: -10px;
+    margin: -18px;
     padding: 0;
     color: #fff;
     z-index: 1;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.221);
+    top: 0px;
+    transition: all .6s;
+  }
+  .plan__plus-move{
+    top: -150px;
+    margin: -25px;
   }
   input[type="radio"] + label {
     font-size: 1.125em;
