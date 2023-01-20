@@ -44,4 +44,18 @@ for(let i = 0;i < level.length;i++){
   });
 };
 
+//plan__plusをクリックした時の挙動
+
+plus.addEventListener("click",()=>{
+  for(let i = 0;i < level.length;i++){
+    number[i].classList.remove("plan__number");
+  };
+  number[5].classList.add("plan__number");
+  level[5].checked = true;
+
+  list[1].classList.add("plan__list-choice");
+  list[0].classList.remove("plan__list-choice");
+  plus.classList.remove("plan__plus-move");
+})
+
 

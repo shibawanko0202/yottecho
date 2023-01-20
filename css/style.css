@@ -631,11 +631,11 @@
   .strength__lists{
     text-align: left;
     max-width: 520px;
+    margin: 8px auto;
+    padding: 24px 24px 24px 46px;
     border: 1.5px solid var(--yottecho-textcolor);
     border-radius: 5px;
     list-style: circle;
-    padding: 24px 24px 24px 46px;
-    margin: 8px auto;
     background-color: rgba(255, 255, 255, 0.479);
   }
   .speechbubbles2{
@@ -1015,7 +1015,7 @@
   .plan-level dt,
   .plan-level dd{
     width: calc(50%);
-    margin: 8px 0;
+    margin: 6px 0;
   }
   .plan-level dd{
     text-align: right;
@@ -1035,19 +1035,21 @@
     border-radius: 50%;
     background-color: orange;
     font-size: 50px;
-    line-height: 43px;
+    line-height: 44px;
     font-weight: bold;
     margin: -18px;
-    padding: 0;
+    padding: 0 0 0 1px;
     color: #fff;
     z-index: 1;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.221);
     top: 0px;
+    user-select: none;
     transition: all .6s;
   }
   .plan__plus-move{
-    top: -150px;
+    top: -148px;
     margin: -25px;
+    cursor: pointer;
   }
   input[type="radio"] + label {
     font-size: 1.125em;
