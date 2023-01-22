@@ -986,8 +986,8 @@
   }
   .price-container + .price-container::before{
     content: "+";
+    font-weight: bold;
     font-size: 24px;
-    /* margin: 30px; */
   }
   .price-container{
     width: 100%;
@@ -996,15 +996,13 @@
   .price-container dd{
     margin: 10px;
   }
-  /* ↓↓ボタンを分かり易いように */
   .plan__select{
     width: 100px;
     height: 40px;
     border-radius: 5px;
     box-shadow:
     3px 3px 12px rgba(17, 17, 17, 0.3),
-    -3px -3px 12px rgba(17, 17, 17, 0.3)
-   ;
+    -3px -3px 12px rgba(17, 17, 17, 0.3);
   }
   .plan-level{
     display: flex;
