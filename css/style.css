@@ -991,6 +991,8 @@
   }
   .price-container{
     width: 100%;
+    /* display: flex;
+    flex-direction: column; */
   }
   .price-container dt,
   .price-container dd{
