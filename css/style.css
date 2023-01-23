@@ -24,6 +24,12 @@
     font-weight: normal;
     font-style: normal;
   }
+  @font-face{ 
+    font-family: 'kiwimaru-m-subset';
+    src: url('../fonts/KiwiMaru-Medium\(よってちょ用サブセット\).ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
   html{
     scroll-behavior: smooth;
@@ -216,6 +222,10 @@
     }
     .side-nav__list:hover{
       border-right: solid 8px var(--yottecho-revaersecolor);
+    }
+    .side-nav__list a{
+      display: block;
+      width: 100%;
     }
     .side-nav__list:last-child{
       margin-top: 30px;
@@ -991,8 +1001,6 @@
   }
   .price-container{
     width: 100%;
-    /* display: flex;
-    flex-direction: column; */
   }
   .price-container dt,
   .price-container dd{
@@ -1005,6 +1013,12 @@
     box-shadow:
     3px 3px 12px rgba(17, 17, 17, 0.3),
     -3px -3px 12px rgba(17, 17, 17, 0.3);
+  }
+  .n-label{
+    font-family: 'kiwimaru-subset';
+  }
+  .n-label.label__select{
+    font-family: 'kiwimaru-m-subset';
   }
   .plan-level{
     display: flex;

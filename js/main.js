@@ -22,6 +22,7 @@ window.addEventListener("scroll",top_button);
 const number = document.getElementsByClassName("plan__number-level");
 const level = document.getElementsByName("n-level");
 const list = document.getElementsByClassName("plan__list");
+const label = document.getElementsByClassName("n-label");
 const plus = document.getElementById("plus");
 
 
@@ -29,8 +30,10 @@ for(let i = 0;i < level.length;i++){
   level[i].addEventListener("change",()=>{
     for(let i = 0;i < level.length;i++){
       number[i].classList.remove("plan__number");
+      label[i].classList.remove("label__select");
     };
     number[i].classList.add("plan__number");
+    label[i].classList.add("label__select");
 
     if(i < 5){
       list[0].classList.add("plan__list-choice");
@@ -49,8 +52,10 @@ for(let i = 0;i < level.length;i++){
 plus.addEventListener("click",()=>{
   for(let i = 0;i < level.length;i++){
     number[i].classList.remove("plan__number");
+    label[i].classList.remove("label__select");
   };
   number[5].classList.add("plan__number");
+  label[5].classList.add("label__select");
   level[5].checked = true;
 
   list[1].classList.add("plan__list-choice");
