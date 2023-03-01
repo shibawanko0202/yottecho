@@ -231,6 +231,9 @@
           <img src="img/編み物.webp" alt="" class="illust-knitting">
           <img src="img/スニーカー.webp" alt="" class="illust-shoes">
         </div>
+        <p class="strength__p">
+          やりたいけどおうちではやれない<spna class="punctuation">、</spna>(危険だから)やらせて貰えないようなことも残存機能を活かした取り組みと手厚い見守りで叶えます。
+        </p>
       </section>
 
       <section class="free-plan" id="free-plan">
@@ -297,8 +300,7 @@
                   <label for="nursing-1" class="n-label label__select">要介護１</label>
                 </dt>
                 <dd>
-                  約
-                  <span class="plan__number-level plan__number">800</span>
+                  <span class="plan__number-level plan__number" id="p-level1"></span>
                   円
                 </dd>
                 <dt>
@@ -306,8 +308,7 @@
                   <label for="nursing-2" class="n-label">要介護２</label>
                 </dt>
                 <dd>
-                  約
-                  <span class="plan__number-level">940</span>
+                  <span class="plan__number-level"></span>
                   円
                 </dd>
                 <dt>
@@ -315,8 +316,7 @@
                   <label for="nursing-3" class="n-label">要介護３</label>
                 </dt>
                 <dd>
-                  約
-                  <span class="plan__number-level">1,100</span>
+                  <span class="plan__number-level"></span>
                   円
                 </dd>
                 <dt>
@@ -324,8 +324,7 @@
                   <label for="nursing-4" class="n-label">要介護４</label>
                 </dt>
                 <dd>
-                  約
-                  <span class="plan__number-level">1,240</span>
+                  <span class="plan__number-level"></span>
                   円
                 </dd>
                 <dt>
@@ -333,32 +332,53 @@
                   <label for="nursing-5" class="n-label">要介護５</label>
                 </dt>
                 <dd>
-                  約
-                  <span class="plan__number-level">1,400</span>
+                  <span class="plan__number-level"></span>
                   円
                 </dd>
               </dl>
               <dl class="price-container">
                 <dt>個別機能訓練加算Ⅱ</dt>
                 <dd>
-                  約<span class="plan__number">57</span>円
+                  <span class="plan__number" id="plan__training"></span>円
                 </dd>
               </dl>
               <dl class="price-container">
                 <dt>入浴</dt>
                 <dd>
-                  約<span class="plan__number">41</span>円
+                  <span class="plan__number" id="plan__bathing"></span>円
+                </dd>
+              </dl>
+              <dl class="price-container">
+                <dt>認知症加算(該当の方)</dt>
+                <dd>
+                  <span class="plan__number" id="plan__dementia"></span>円
                 </dd>
               </dl>
               <dl class="price-container">
                 <dt>
                   介護職員処遇改善加算Ⅰ
                 </dt>
-                <dd></dd>
+                <dd>
+                  <span class="plan__number plan__staff"></span>円
+                </dd>
               </dl>
               <dl class="price-container">
-                <dt>認知症加算(該当の方)</dt>
-                <dd>約<span class="plan__number">61</span>円</dd>
+                <dt>ベースアップ加算</dt>
+                <dd>
+                  <span class="plan__number plan__baseup"></span>円
+                </dd>
+              </dl>
+              <dl class="price-container">
+                <dt>地域区分単価</dt>
+                <dd>
+                  <span class="plan__number plan__region"></span>
+                </dd>
+              </dl>
+              <dl class="price-c-total">
+                <dt>合計</dt>
+                <dd>
+                  <span class="plan__number plan__total"></span>円
+                </dd>
               </dl>
             </dd>
           </dl>
@@ -387,12 +407,34 @@
                   <span class="plan__number-level">3,500</span>
                   円
                 </dd>
-              </dl class="price-container">
+              </dl>
               <dl class="price-container">
                 <dt>
                   介護職員処遇改善加算Ⅰ
                 </dt>
-                <dd></dd>
+                <dd>
+                  <span class="plan__number plan__staff"></span>円
+                </dd>
+              </dl>
+              <dl class="price-container">
+                <dt>ベースアップ加算</dt>
+                <dd>
+                  <span class="plan__number plan__baseup"></span>円
+                </dd>
+              </dl>
+              <dl class="price-container">
+                <dt>
+                  地域区分単価
+                </dt>
+                <dd>
+                  <span class="plan__number plan__region"></span>
+                </dd>
+              </dl>
+              <dl class="price-c-total">
+                <dt>合計</dt>
+                <dd>
+                  <span class="plan__number plan__total"></span>円
+                </dd>
               </dl>
               <small>
                 ※週２回程度ご利用の場合
@@ -411,7 +453,7 @@
                   昼食・おやつ・お飲み物代
                 </dt>
                 <dd>
-                  <span class="plan__number">790</span>円
+                  <span class="plan__number">850</span>円
                 </dd>
               </dl>
             </dd>

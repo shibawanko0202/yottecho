@@ -1001,9 +1001,24 @@
   }
   .price-container{
     width: 100%;
+    transition: all .6s;
+  }
+  .container_non{
+    display: none;
   }
   .price-container dt,
   .price-container dd{
+    margin: 10px;
+  }
+  .price-c-total{
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .price-c-total dt{
+    font-size: 28px;
+  }
+  .price-c-total dd{
+    /* font-size: 36px; */
     margin: 10px;
   }
   .plan__select{
@@ -1058,10 +1073,10 @@
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.221);
     top: 0px;
     user-select: none;
-    transition: all .6s;
+    transition: all .3s;
   }
   .plan__plus-move{
-    top: -148px;
+    top: -110px;
     margin: -25px;
     cursor: pointer;
   }
