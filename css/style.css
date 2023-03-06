@@ -864,7 +864,7 @@
     border-radius: 2px;
     padding: 0;
     margin: 16px 0 4px;
-    vertical-align: top;
+    /* vertical-align: top; */
   }
   .everyday__p{
     width: auto;
