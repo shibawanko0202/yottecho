@@ -39,7 +39,7 @@
     display: flex;
     width: 100%;
     background-color: var(--yottecho-maincolor);
-    font-family: 'kiwimaru-subset', serif;
+    font-family: 'kiwimaru-subset', 'SansSerif',  serif;
     color: var(--yottecho-textcolor);
     overflow-x: hidden;
   }
@@ -858,13 +858,11 @@
     width: 100%;
     max-width: 400px;
     height: auto;
-    /* object-fit: contain; */
     border: 8px #fff solid;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.621);
     border-radius: 2px;
     padding: 0;
     margin: 16px 0 4px;
-    /* vertical-align: top; */
   }
   .everyday__p{
     width: auto;
