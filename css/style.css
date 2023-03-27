@@ -220,7 +220,8 @@
       cursor: pointer;
       transition: all .5s;
     }
-    .side-nav__list:hover{
+    .side-nav__list:hover,
+    .side-nav__list.current{
       border-right: solid 8px var(--yottecho-revaersecolor);
     }
     .side-nav__list a{
